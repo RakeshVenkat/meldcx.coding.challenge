@@ -17,8 +17,11 @@ http://localhost:3001/files/:privatekey
 
 #### Modules used:
 Foundation: express body-parser morgan multer dotenv errorhandler chalk
+
 Transpiling: @babel/cli @babel/core @babel/node @babel/preset-env @babel/plugin-transform-runtime
+
 Unit testing: chai mocha nyc sinon sinon-chai
+
 
 ### Logic used: 
 The public and private passwords can be created using the crypto2 module.
@@ -29,6 +32,7 @@ Uploading the same file (even with same fielname) again will generate a new key 
 
 ### TODO:
  Due to lack of time I couldn't add unit  and integration tests
+ 
  I couldn't add a server's idle timeout as I wasnt clear is that a timeout on session or on the API.
 
  I can do the above with more time and also add a integration to a google cloud file server.
